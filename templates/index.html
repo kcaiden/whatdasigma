@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="caiden">
+  <meta name="description" content="CAIDEN">
+  <meta name="title" content="Caiden">
+  <meta name="theme-color" content="#0000FF">
+  <meta property="og:image" content="https://cdn1.iconfinder.com/data/icons/ios-11-glyphs/30/face_ID-512.png">
+  <title>Caiden</title>
+  <style>
+    body {
+      user-select: none; /* Disable text selection. */
+    }
+  </style>
+  <link rel="icon" href="/static/favicon.png">
+  <link href="static/styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="container">
+    <p class="glitch">
+      <span aria-hidden="true">caiden</span>
+      caiden
+      <span aria-hidden="true">caiden</span>
+    </p>
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script defer data-domain="caiden.is-a.dev" src="https://analytics.is-a.dev/js/script.js"></script>
+  <script src="static\script.js"></script>
+  <script>
+    document.addEventListener('click', function (event) {
+      const x = event.clientX / window.innerWidth;
+      const y = event.clientY / window.innerHeight;
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { x, y },
+        colors: ['#ff0000', '#00ff00', '#0000ff']
+      });
+    });
+    confetti({colors: ['#ff0000', '#00ff00', '#0000ff']});
+  </script>
+</body>
+</html>
